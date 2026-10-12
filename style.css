@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace; /* Digital font vibe */
+    background-color: #0b141a; /* WhatsApp dark teal-black */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160' fill='none' stroke='%23ffffff' stroke-opacity='0.08' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='20' cy='20' r='8'/%3E%3Cpolygon points='90,12 93,21 102,21 95,27 98,36 90,30 82,36 85,27 78,21 87,21'/%3E%3Cpath d='M130 120 c-8 -10 -22 2 -10 12 l10 9 l10 -9 c12 -10 -2 -22 -10 -12z'/%3E%3Ccircle cx='40' cy='110' r='10'/%3E%3Cpath d='M40 104 v6 l4 3'/%3E%3Cpath d='M90 80 q8 -10 16 0 t16 0'/%3E%3Cpath d='M140 40 v12 M134 46 h12'/%3E%3Cpath d='M20 150 l8 -14 l8 14z'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+    animation: drift 40s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes drift {
+    from { background-position: 0 0; }
+    to   { background-position: 160px 160px; }
+}
+
+.clock-container {
+    background: #222;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+    border: 2px solid #00ffcc;
+}
+
+.clock {
+    color: #00ffcc; /* Neon Green/Cyan */
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#ampm {
+    font-size: 30px;
+    color: #fff;
+    margin-left: 10px;
+}
