@@ -42,3 +42,64 @@ body {
     color: #fff;
     margin-left: 10px;
 }
+ /* Tablet */
+@media (max-width: 768px) {
+    .clock-container {
+        padding: 18px 30px;
+    }
+
+    .clock {
+        font-size: 48px;
+    }
+
+    #ampm {
+        font-size: 24px;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    body {
+        height: 100dvh; /* mobile browser ki address bar wali problem fix karta hai */
+        background-size: 120px 120px; /* pattern thoda chhota */
+    }
+
+    .clock-container {
+        padding: 14px 20px;
+        border-radius: 10px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .clock {
+        font-size: 34px;
+        letter-spacing: 1px;
+    }
+
+    #ampm {
+        font-size: 18px;
+        margin-left: 6px;
+    }
+}
+
+/* Chhote phones (iPhone SE type) */
+@media (max-width: 360px) {
+    .clock {
+        font-size: 28px;
+    }
+
+    #ampm {
+        font-size: 15px;
+    }
+}
+
+/* Landscape mode mein phone */
+@media (max-height: 450px) and (orientation: landscape) {
+    .clock {
+        font-size: 36px;
+    }
+
+    .clock-container {
+        padding: 10px 24px;
+    }
+}
